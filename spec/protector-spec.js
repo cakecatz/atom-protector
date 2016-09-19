@@ -23,7 +23,7 @@ describe('Protector', () => {
     describe('when click close buton', () => {
       it('close item', () => {
         const workspaceElement = atom.views.getView(atom.workspace);
-        workspaceElement.querySelector('.protector .close').click();
+        workspaceElement.querySelector('.protector-close-btn').click();
         expect(atom.workspace.getActivePaneItem()).toBe(undefined);
       });
     });
@@ -32,7 +32,7 @@ describe('Protector', () => {
       it('open TextEditor', () => {
         jasmine.unspy(window, 'setTimeout');
         const workspaceElement = atom.views.getView(atom.workspace);
-        workspaceElement.querySelector('.protector .open').click();
+        workspaceElement.querySelector('.protector-open-btn').click();
 
         waitsForPromise(() => {
           return new Promise((resolve) => {

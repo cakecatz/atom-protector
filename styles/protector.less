@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@icon-size: 48px;
 
 .protector {
   width: 100%;
@@ -22,11 +23,11 @@
   }
 
   .message .icon::before {
-    width: 32px;
+    width: @icon-size;
     margin: 0px;
-    margin-top: -32px;
-    margin-bottom: 32px;
-    font-size: 32px;
+    margin-top: -@icon-size;
+    margin-bottom: @icon-size;
+    font-size: @icon-size;
     color: @text-color-error;
   }
 
