@@ -1,0 +1,32 @@
+{
+  "name": "protector",
+  "main": "./lib/protector",
+  "version": "0.1.0",
+  "description": "Protect from opening large file.",
+  "keywords": [],
+  "repository": "https://github.com/atom/protector",
+  "license": "MIT",
+  "scripts": {
+    "lint": "semistandard",
+    "test": "atom --test spec"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "etch": "^0.7.1",
+    "filesize": "^3.3.0",
+    "filesize-parser": "^1.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.1.2",
+    "semistandard": "^9.0.0"
+  },
+  "semistandard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "atom",
+      "waitsForPromise"
+    ]
+  }
+}
