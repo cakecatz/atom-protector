@@ -1,4 +1,4 @@
-# atom-protector
+# atom-protector [![CircleCI](https://circleci.com/gh/cakecatz/atom-protector/tree/master.svg?style=svg)](https://circleci.com/gh/cakecatz/atom-protector/tree/master)
 
 Protect from opening large file
 
